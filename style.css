@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  background-color: yellowgreen;
+}
+:root {
+  /* ### Primary */
+
+  --blue: hsl(223, 87%, 63%);
+
+  /* ### Secondary */
+
+  --paleblue: hsl(223, 100%, 88%);
+  --lightRed: hsl(354, 100%, 66%);
+
+  /* ### Neutral */
+
+  --gray: hsl(0, 0%, 59%);
+  --veryDarkBlue: hsl(209, 33%, 12%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  width: 24.13rem;
+  height: 65rem;
+  background-color: white;
+  padding: 3.5rem;
+}
+
+header img {
+  width: 3.3rem;
+  margin-left: 7.3rem;
+  padding-bottom: 1rem;
+  margin-top: 1.8rem;
+}
+header h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 300;
+  padding: 1rem;
+  padding-bottom: 1.2rem;
+}
+header span {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+header h2 {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+header input {
+  border-radius: 1.6rem;
+  padding: 0.7rem;
+  font-size: 0.75rem;
+  padding-left: 2rem;
+  margin-bottom: 0.6rem;
+  border: 2px solid var(--paleblue);
+}
+header input::placeholder {
+  color: var(--paleblue);
+}
+header button {
+  border-radius: 1.6rem;
+  padding: 0.7rem;
+  font-size: 0.75rem;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 300;
+  border: 1px solid var(--paleblue);
+  margin-bottom: 4.3rem;
+}
+main .hold-img {
+  position: relative;
+  right: 1rem;
+}
+main .graph-img {
+  width: 19.5rem;
+  margin-bottom: 4rem;
+}
+.hold-icon {
+  border: 1px solid var(--paleblue);
+  margin-left: 1rem;
+  padding: 0.35rem;
+  border-radius: 100%;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.social {
+  display: flex;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+.social .hold-icon i {
+  padding-left: 0.1rem;
+  font-size: 0.9rem;
+}
+.social i:nth-child(2) {
+  background-color: red;
+}
+
+
+.block-div {
+  display: grid;
+}
