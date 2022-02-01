@@ -85,6 +85,10 @@ header button {
   border: 1px solid var(--paleblue);
   margin-bottom: 4.3rem;
 }
+header button:hover {
+  cursor: pointer;
+  background-color: rgba(62, 82, 163,0.8);
+}
 main .hold-img {
   position: relative;
   right: 1rem;
