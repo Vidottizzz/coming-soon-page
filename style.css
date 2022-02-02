@@ -25,6 +25,14 @@ body {
   --gray: hsl(0, 0%, 59%);
   --veryDarkBlue: hsl(209, 33%, 12%);
 }
+.hide {
+  display: none;
+}
+.err-msg p{
+  color: var(--lightRed);
+  font-size: 0.6rem;
+  margin-left: 2.1rem;
+}
 .border-red {
   border: 1px solid var(--lightRed)
 }
@@ -68,12 +76,16 @@ header h2 {
   margin-bottom: 2rem;
 }
 header input {
+  width: 100%;
   border-radius: 1.6rem;
   padding: 0.7rem;
   font-size: 0.75rem;
   padding-left: 2rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.25rem;
   border: 2px solid var(--paleblue);
+}
+header .inside-blockdiv {
+  margin-bottom: 0.5rem;
 }
 header input::placeholder {
   color: var(--paleblue);
@@ -98,7 +110,7 @@ main .hold-img {
 }
 main .graph-img {
   width: 19.5rem;
-  margin-bottom: 7rem;
+  margin-bottom: 6rem;
 }
 .hold-icon {
   border: 1px solid rgba(194, 211, 255,0.55);
@@ -145,6 +157,10 @@ main p {
     display: grid;
   }
 
+  .err-msg p{
+    
+    margin-left: 1.6rem;
+  }
   header {
     margin: auto;
   }
@@ -164,14 +180,16 @@ main p {
     font-weight: 400;
   }
   header .block-div {
-    display: inline-block;
+    display: flex;
   }
   header input {
    width:17.5rem;
    padding-left: 1.4rem;
+   margin-bottom: 0.2rem;
   }
   header button {
    width: 9rem;
+   margin-left: 1rem;
   }
   main {
     margin: auto;
